@@ -17,7 +17,14 @@ int main(int argc, char** argv) {
         if ((i % 5 == 0) || (i % 3 == 0))
             sum += i;
     }//for each number below 1000
+     
+    int m = 999/3;
+    int n = 999/5;
+    int p = 999/15;
+    
+    int sum2 = 5* n * (n+1)/2 + 3*m*(m+1)/2 - 15*p*(p+1)/2; 
     
     cout << "Sum = " << sum << endl;
+    cout << "Sum2 = " << sum2 << endl;
     return 0;
 }//main
